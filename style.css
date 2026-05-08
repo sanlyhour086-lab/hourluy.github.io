@@ -1,0 +1,286 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* LOGIN PAGE */
+
+.login-container{
+  width:100%;
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(135deg,#0f172a,#111827,#1e293b);
+}
+
+.login-box{
+  width:350px;
+
+  background:#111827;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 0 20px cyan;
+}
+
+.login-box h1{
+  color:cyan;
+  margin-bottom:10px;
+}
+
+.login-box p{
+  color:#aaa;
+  margin-bottom:20px;
+}
+
+.login-box input{
+  width:100%;
+
+  padding:12px;
+
+  margin:10px 0;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#1e293b;
+
+  color:white;
+}
+
+.login-box button{
+  width:100%;
+
+  padding:12px;
+
+  margin-top:10px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:cyan;
+
+  color:black;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.login-box button:hover{
+  background:white;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  position:fixed;
+
+  width:250px;
+
+  height:100vh;
+
+  background:#111827;
+
+  padding:30px;
+}
+
+.sidebar h2{
+  color:cyan;
+  margin-bottom:30px;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar ul li{
+  margin:15px 0;
+}
+
+.sidebar ul li a{
+  text-decoration:none;
+
+  color:white;
+
+  display:block;
+
+  padding:12px;
+
+  background:#1e293b;
+
+  border-radius:10px;
+
+  transition:0.3s;
+}
+
+.sidebar ul li a:hover{
+  background:cyan;
+  color:black;
+}
+
+/* CONTENT */
+
+.content{
+  margin-left:270px;
+
+  padding:30px;
+}
+
+.content h1{
+  margin-bottom:20px;
+}
+
+/* CARDS */
+
+.cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:250px;
+
+  background:#111827;
+
+  padding:25px;
+
+  border-radius:15px;
+
+  box-shadow:0 0 10px rgba(0,255,255,0.3);
+}
+
+.card h3{
+  color:cyan;
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:30px;
+}
+
+/* INPUT */
+
+.content input{
+  width:300px;
+
+  padding:12px;
+
+  margin:10px 10px 10px 0;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:#1e293b;
+
+  color:white;
+}
+
+.content button{
+  padding:12px 20px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:cyan;
+
+  color:black;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+/* TABLE */
+
+table{
+  width:100%;
+
+  border-collapse:collapse;
+
+  margin-top:20px;
+}
+
+table th{
+  background:cyan;
+
+  color:black;
+
+  padding:15px;
+}
+
+table td{
+  background:#1e293b;
+
+  padding:15px;
+
+  border:1px solid #333;
+}
+
+/* CALCULATOR */
+
+.calculator-box{
+  width:300px;
+
+  background:#111827;
+
+  padding:20px;
+
+  border-radius:15px;
+}
+
+#calcDisplay{
+  width:100%;
+
+  height:50px;
+
+  margin-bottom:20px;
+
+  text-align:right;
+
+  font-size:20px;
+
+  padding:10px;
+}
+
+.buttons{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:10px;
+}
+
+.buttons button{
+  padding:15px;
+}
+
+.clear{
+  grid-column:span 4;
+
+  background:red !important;
+
+  color:white !important;
+}
